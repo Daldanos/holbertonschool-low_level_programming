@@ -1,10 +1,10 @@
 #include <stdio.h>
 
-/**
- *
- * Main function, using puts
- */
 int main(void)
 {
-puts("\"Programming is like building a multilingual puzzle");
+	char Prueba[] = "\"Programming is like building a multilingual puzzle";
+
+	puts(Prueba);
+
+	return (0);
 }
