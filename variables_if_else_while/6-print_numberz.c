@@ -15,7 +15,7 @@ int main(void)
 	int PRUEBA;
 
 	for (PRUEBA = 0; PRUEBA <= 9; PRUEBA++)
-		putchar(PRUEBA);
+		putchar((int)PRUEBA);
 	putchar('\n');
 	return (0);
 }
