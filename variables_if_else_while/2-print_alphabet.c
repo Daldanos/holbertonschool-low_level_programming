@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+
 /**
 * main - start
 *
@@ -8,6 +9,7 @@
 *
 * Return: Correct output
 */
+
 int main(void)
 {
 	char PRUEBA;
