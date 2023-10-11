@@ -12,10 +12,10 @@
 
 int main(void)
 {
-	char PRUEBA;
+	int PRUEBA;
 
-	for (PRUEBA = 'a'; PRUEBA <= 'z'; PRUEBA++)
-		putchar(PRUEBA);
+	for (PRUEBA = '97'; PRUEBA <= '122'; PRUEBA++)
+	putchar(char PRUEBA);
 		putchar('\n');
 	return (0);
 }
