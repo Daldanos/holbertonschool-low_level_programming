@@ -13,10 +13,10 @@ int main(void)
 	float VARFLOAT;
 	double VARDOUBLE;
 
-	printf("Size of int is: %ld", sizeof(VARINT)\n);
-	printf("Size of char is: %ld", sizeof(VARCHAR)\n);
-	printf("Size of float is: %ld", sizeof(VARFLOAT)\n);
-	printf("Size of double is: %ld", sizeof(VARDOUBLE)\n);
+	printf("Size of int is: %ld\n", sizeof(VARINT));
+	printf("Size of char is: %ld\n", sizeof(VARCHAR));
+	printf("Size of float is: %ld\n", sizeof(VARFLOAT));
+	printf("Size of double is: %ld\n", sizeof(VARDOUBLE));
 
 	return (0);
 }
