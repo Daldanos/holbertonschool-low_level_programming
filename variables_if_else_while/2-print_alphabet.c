@@ -14,8 +14,8 @@ int main(void)
 {
 	int PRUEBA;
 
-	for (PRUEBA = '97'; PRUEBA <= '122'; PRUEBA++)
-	putchar(char PRUEBA);
-		putchar('\n');
+	for (PRUEBA = 97; PRUEBA <= 122; PRUEBA++)
+		putchar((char)PRUEBA);
+	putchar('\n');
 	return (0);
 }
