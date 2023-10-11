@@ -16,5 +16,6 @@ int main(void)
 
 	for (PRUEBA = 0; PRUEBA <= 9; PRUEBA++)
 		printf("%d", PRUEBA);
+	printf("\n");
 	return (0);
 }
