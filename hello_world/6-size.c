@@ -13,12 +13,12 @@ int main(void)
 	long int VARLONGINT;
 	float VARFLOAT;
 	double VARDOUBLE;
-	
-	printf("Size of char: %ld byte(s)\n", sizeof(VARCHAR));
-	printf("Size of int: %ld byte(s)\n", sizeof(VARINT));
-	printf("Size of long int: %ld byte(s)\n", sizeof(VARLONGINT));
-	printf("Size of float: %ld byte(s)\n", sizeof(VARFLOAT));
-	printf("Size of double: %ld byte(s)\n", sizeof(VARDOUBLE));
+
+	printf("Size of a char: %ld byte(s)\n", sizeof(VARCHAR));
+	printf("Size of an int: %ld byte(s)\n", sizeof(VARINT));
+	printf("Size of a long int: %ld byte(s)\n", sizeof(VARLONGINT));
+	printf("Size of a long long int: %ld byte(s)\n", sizeof(VARDOUBLE));
+	printf("Size of a float: %ld byte(s)\n", sizeof(VARFLOAT));
 
 	return (0);
 }
