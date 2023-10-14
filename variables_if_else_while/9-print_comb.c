@@ -15,8 +15,13 @@ int main(void)
 	int PRUEBA;
 
 	for (PRUEBA = 48; PRUEBA <= 57; PRUEBA++)
+	{
 		putchar(PRUEBA);
-	putchar(',');
-	putchar(' ');
+		if (PRUEBA < 57)
+		{
+			putchar(',');
+			putchar(' ');
+		}
+	putchar(\n);
 	return (0);
 }
