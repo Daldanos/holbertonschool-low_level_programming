@@ -1,12 +1,11 @@
 #include "main.h"
-
+#include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
 /**
-* main - start
-*
-* Description: print_alphabet
-*
+* print_alphabet - utilizes on the _putchar function
+* Return: Correct output
 */
-
 void print_alphabet(void)
 {
 	char c = 'a';
@@ -18,4 +17,5 @@ void print_alphabet(void)
 	}
 	_putchar('\n');
 
+	return (0);
 }
