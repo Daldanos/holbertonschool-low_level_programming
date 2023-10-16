@@ -7,7 +7,7 @@
 * @n: int variable
 * Return: 1 if positive, -1 negative, 0 if 0
 */
-int int print_sign(int n)
+int print_sign(int n)
 {
 	if (n > 0)
 	{
