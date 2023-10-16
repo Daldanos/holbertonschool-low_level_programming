@@ -4,7 +4,7 @@
 #include <stdio.h>
 /**
 * print_alphabet - utilizes on the _putchar function
-* Return: Correct output
+* 
 */
 void print_alphabet(void)
 {
@@ -16,6 +16,4 @@ void print_alphabet(void)
 		c++;
 	}
 	_putchar('\n');
-
-	return (0);
 }
