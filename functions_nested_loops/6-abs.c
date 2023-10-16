@@ -5,12 +5,12 @@
 /**
 * _abs - absolute value
 * @r: int variable
-* Return: n if positive, n * -1 if negative
+* Return: r if positive, r * -1 if negative
 */
 int _abs(int r)
 {
 	if (r >= 0)
-		return (n);
+		return (r);
 	else
-		return (n * (-1));
+		return (r * (-1));
 }
