@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
@@ -18,7 +18,7 @@ int main(void)
 
 	while (c[a] != '\0')
 	{
-		_putchar(c[a];
+		_putchar(c[a]);
 		a++;
 	}
 	_putchar('\n');
