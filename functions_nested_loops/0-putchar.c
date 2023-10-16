@@ -13,12 +13,12 @@
 
 int main(void)
 {
-	char PRUEBA[] = "_putchar";
+	char c[] = "_putchar";
 	int a = 0;
 
-	while (PRUEBA[a] != '\0')
+	while (c[a] != '\0')
 	{
-		_putchar(PRUEBA[a];
+		_putchar(c[a];
 		a++;
 	}
 	_putchar('\n');
