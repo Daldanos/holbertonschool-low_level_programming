@@ -5,7 +5,7 @@
 /**
 * jack_bauer - shows al the variables of a clock
 * @h @m: int variable
-*
+i*
 */
 void jack_bauer(void)
 {
@@ -13,7 +13,7 @@ void jack_bauer(void)
 
 	h = 0;
 
-	while (h > 24)
+	while (h < 24)
 	{
 		m = 0;
 		while (m < 60)
