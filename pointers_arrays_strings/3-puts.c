@@ -3,7 +3,8 @@
 
 /**
  * _puts - main function
- * @s: pointer variable
+ * @str: pointer variable
+ *
  */
 void _puts(char *str)
 {
