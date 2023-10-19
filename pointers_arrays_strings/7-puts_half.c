@@ -9,15 +9,17 @@
  */
 void puts_half(char *str)
 {
-	int count, a, b;
+	int count, a, b, c, d;
 	char rev;
 
 	a = strlen(str);
 	b = strlen(str) - 1;
+	c = a / 2;
+	d = b / 2;
 
 	if (a % '2' == 0)
 	{
-		for (count = a / '2'; count < a; count++)
+		for (count = c; count < a; count++)
 	{
 		rev = str[count];
 		_putchar(rev);
@@ -26,7 +28,7 @@ void puts_half(char *str)
 	else
 		if (a % '2' != 0)
 		{
-		for (count = b / '2'; count < a; count++)
+		for (count = d; count < a; count++)
 
 		rev = str[count];
 		_putchar(rev);
