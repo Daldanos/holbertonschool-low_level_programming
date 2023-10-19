@@ -9,20 +9,17 @@
  */
 void rev_string(char *s)
 {
-	int count;
-	int var = 0;
-	int temp = strlen(s);
-	char rev[temp];
+	char rev, *var, *rav;
 
-	for (count = strlen(s) - 1; count >= 0; count--)
+	for (rav = s; *rav != 0; rav++)
+	;
+	if (rav > s)
+		rav--;
+	for (var =s; var < rav; var++, rav--)
 	{
-		char rev[temp];
-		rev(var) = s(count);
-		var++;
-	}
-	for (count = 0; count < strlen(s); count++)
-	{
-		s(count) = rev(count);
-	}
-	_putchar('\n');
+		rev = *var;
+		*var = *rav;
+		*rav = rev;
+}
+return s;
 }
