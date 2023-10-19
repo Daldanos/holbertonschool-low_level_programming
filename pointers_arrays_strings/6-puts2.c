@@ -13,7 +13,7 @@ void puts2(char *str)
 	char rev;
 	int t = strlen(str);
 	
-	while (count != '\0')
+	while (count < t && count != '\0')
 	for (count = 0; t >= count; count += 2)
 	{
 		rev = str[count];
