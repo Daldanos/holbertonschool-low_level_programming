@@ -11,8 +11,8 @@ void puts2(char *str)
 {
 	int count;
 	char rev;
-	int t = strlen(str);
-	
+	int t = strlen(str) -1;
+
 	while (count < t && count != '\0')
 	for (count = 0; t >= count; count += 2)
 	{
