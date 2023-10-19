@@ -9,10 +9,9 @@
  */
 void rev_string(char *s)
 {
-	{
-		int count;
-		char rev;
-		int temp = strlen(s);
+	int count;
+	char rev;
+	int temp = strlen(s);
 
 	for (count = 0; count < temp - 1; count++)
 	{
@@ -20,16 +19,12 @@ void rev_string(char *s)
 		_putchar(rev);
 	}
 	_putchar('\n');
-	}
+	
 
-	{
-		int countb;
-		char rev2;
 
-	for (countb = strlen(s) - 1; countb >= 0; countb--)
+	for (count = strlen(s) - 1; count >= 0; count--)
 	{
-		rev2 = s[countb];
-		_putchar(rev2);
-	}
+		rev = s[count];
+		_putchar(rev);
 	}
 }
