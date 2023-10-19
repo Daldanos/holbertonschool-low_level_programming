@@ -23,6 +23,7 @@ void puts_half(char *str)
 			printf("%c", str[d]);
 			d++;
 		}
+		_putchar('\n');
 	}
 	else
 	{
@@ -31,6 +32,6 @@ void puts_half(char *str)
 			printf("%c", str[c]);
 			c++;
 		}
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
