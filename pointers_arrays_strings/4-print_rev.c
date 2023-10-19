@@ -3,20 +3,20 @@
 #include <string.h>
 
 /**
- * _puts - main function
+ * print_rev - main function
  * @str: pointer variable
  *
  */
 void print_rev(char *s)
 {
-	int count, len, temp;
-
-	for (count = 0; count < len / 2; count++)
+	int count;
+	char rev;
+	
+	for (count = strlen(s) - 1; count > 0; count--)
 	{
-		temp = s[count];
-		s[count] = s[len - count - 1];
+		rev = s[count];
 		s[len - count - 1] = temp;
-		_putchar(s)
+		_putchar(rev)
 	}	
 	_putchar('\n');
 }
