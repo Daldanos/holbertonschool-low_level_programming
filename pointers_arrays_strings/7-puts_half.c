@@ -32,5 +32,5 @@ void puts_half(char *str)
 			c++;
 		}
 	}
-	_putchar('\n');
+	printf("\n");
 }
