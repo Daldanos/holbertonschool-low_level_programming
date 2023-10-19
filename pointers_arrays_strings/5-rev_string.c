@@ -9,17 +9,17 @@
  */
 void rev_string(char *s)
 {
-	char rev, *var, *rav;
+	char a, *b, *c;
 
-	for (rav = s; *rav != 0; rav++)
+	for (c = s; *c != 0; c++)
 	;
-	if (rav > s)
-		rav--;
-	for (var =s; var < rav; var++, rav--)
+	if (c > s)
+		c--;
+	for (b = s; b < c; b++, c--)
 	{
-		rev = *var;
-		*var = *rav;
-		*rav = rev;
+		a = *b;
+		*b = *c;
+		*c = a;
 }
 return s;
 }
