@@ -17,20 +17,20 @@ void puts_half(char *str)
 	c = a / 2;
 	d = b / 2;
 
-	if (a % '2' == 0)
+	if (a % 2 != 0)
 	{
-		for (count = c; count < a; count++)
-	{
-		rev = str[count];
-		_putchar(rev);
-	}
+		while(str[d] != '\0')
+		{
+			printf("%c", str[d]);
+			d++;
+		}
 	}
 	else
-		if (a % '2' != 0)
+	{
+		while(str[c] != '\0')
 		{
-		for (count = d; count < a; count++)
-
-		rev = str[count];
-		_putchar(rev);
+			printf("%c", str[c]);
+			c++;
+		}
 	}
 }
