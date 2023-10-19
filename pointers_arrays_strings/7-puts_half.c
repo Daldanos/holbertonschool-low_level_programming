@@ -26,7 +26,7 @@ void puts_half(char *str)
 	else
 		if (a % '2' != 0)
 		{
-		for (count = b / 2; count >= a count++)
+		for (count = b / 2; count >= a; count++)
 
 		rev = str[count];
 		_putchar(rev);
