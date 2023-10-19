@@ -12,8 +12,9 @@ void puts2(char *str)
 	int count;
 	char rev;
 	int t = strlen(str);
-
-	for (count = 0; t >= count && count != '\0'; count += 2)
+	
+	while (count != '\0')
+	for (count = 0; t >= count; count += 2)
 	{
 		rev = str[count];
 		_putchar(rev);
