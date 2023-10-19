@@ -26,9 +26,9 @@ void rev_string(char *s)
 		int countb;
 		char rev2;
 
-	for (countb = strlen(s) - 1; count >= 0; count--)
+	for (countb = strlen(s) - 1; countb >= 0; countb--)
 	{
-		rev = s[count];
+		rev2 = s[countb];
 		_putchar(rev2);
 	}
 	}
