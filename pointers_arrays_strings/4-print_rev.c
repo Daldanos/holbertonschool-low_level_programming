@@ -4,18 +4,18 @@
 
 /**
  * print_rev - main function
- * @str: pointer variable
+ * @s: pointer variable
  *
  */
 void print_rev(char *s)
 {
 	int count;
 	char rev;
-	
-	for (count = strlen(s) -1; count >= 0; count--)
+
+	for (count = strlen(s) - 1; count >= 0; count--)
 	{
 		rev = s[count];
 		_putchar(rev);
-	}	
+	}
 	_putchar('\n');
 }
