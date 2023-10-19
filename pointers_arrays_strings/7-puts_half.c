@@ -19,7 +19,7 @@ void puts_half(char *str)
 
 	if (a % 2 != 0)
 	{
-		while(str[d] != '\0')
+		while (str[d] != '\0')
 		{
 			printf("%c", str[d]);
 			d++;
@@ -27,7 +27,7 @@ void puts_half(char *str)
 	}
 	else
 	{
-		while(str[c] != '\0')
+		while (str[c] != '\0')
 		{
 			printf("%c", str[c]);
 			c++;
