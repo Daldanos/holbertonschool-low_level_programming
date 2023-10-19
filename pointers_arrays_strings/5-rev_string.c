@@ -21,5 +21,4 @@ void rev_string(char *s)
 		*b = *c;
 		*c = a;
 }
-return s;
 }
