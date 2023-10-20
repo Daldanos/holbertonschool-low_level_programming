@@ -10,7 +10,12 @@
 int _atoi(char *s)
 {
 	int a;
-	a = _atoi(s);
-	printf("%d\n", a);
-	return (0);
+	int lar;
+	int result;
+
+	for(a = 0; a < lar; a++)
+	{
+		result = result * 10 + (s[a] - '0');
+	}
+	return (result);
 }
