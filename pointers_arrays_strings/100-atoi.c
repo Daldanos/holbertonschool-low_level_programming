@@ -12,8 +12,9 @@ int _atoi(char *s)
 	int a;
 	int lar;
 	int result;
+	lar = strlen(s);
 
-	for(a = 0; a < lar; a++)
+	for (a = 0; a < lar; a++)
 	{
 		result = result * 10 + (s[a] - '0');
 	}
