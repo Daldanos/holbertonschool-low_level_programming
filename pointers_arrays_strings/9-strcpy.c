@@ -3,12 +3,19 @@
 #include <string.h>
 
 /**
- * *_strcpy - main function
- * pointer variable
- *
+ * _strcpy - main function
+ * @dest:pointer variable
+ * @src: pointer variable
+ * Return: dest
  */
 char *_strcpy(char *dest, char *src)
 {
-	_strcpy(dest, src);
+	int i;
+
+	while (src[i])
+	{
+		dest[i] = src[i];
+		i++;
+	}
 	return (dest);
 }
