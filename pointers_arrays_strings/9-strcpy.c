@@ -3,12 +3,12 @@
 #include <string.h>
 
 /**
- * puts_half - main function
- * @str: pointer variable
+ * *_strcpy - main function
+ * pointer variable
  *
  */
 char *_strcpy(char *dest, char *src)
 {
-	*_strcpy(dest, src);
+	_strcpy(dest, src);
 	return (dest);
 }
