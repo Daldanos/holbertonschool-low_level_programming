@@ -10,35 +10,27 @@
 int _atoi(char *s)
 {
 	int sign = 1;
-	int result = 0;
+	unsigned int result = 0;
+	char c = 0;
 
 	while (*s)
 	{
 		if (*s == '-')
-		{
 			sign *= -1;
-	}
-	else if (*s >= '0' && *s <= '9')
-	{
-		break;
-	}
-	s++
-	}
-	while (*s >= '0' && *s <= '9')
-	{
-		if (result > (INT_MAX - (*s - '0')) / 10)
+
+		if (*s >= '0' && *s <= '9')
 		{
-			if (sign == 1)
-			{
-				return INT_MAX;
-			}
-			else
-			{
-				return INT_MIN;
-			}
+			c = 1;
+			result = result * 10 + *s - '0';
 		}
-		result = result * 10 + (*s - '0');
+
+		else if (c)
+			break;
 		s++;
 	}
-	return result * sign;
+
+	if (sign < 0)
+		result = (-result);
+
+	return (result);
 }
