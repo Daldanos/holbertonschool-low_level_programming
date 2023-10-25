@@ -20,9 +20,17 @@ char *cap_string(char *str)
 			str[i - 1] == ')' || str[i - 1] == '{' || str[i - 1] == '}'))
 		{
 			str[j] -= 32;
+			i = 0;
 		}
+			else
+			{
+				i++;
+			}
+			else
+			{
+				i++;
+			}
 		}
 	}
-	i++;
 	return (str);
 }
