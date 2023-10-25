@@ -2,6 +2,8 @@
 #include <stdio.h>
 /**
  * _strcat - main function
+ * @dest: destination pointer
+ * @src: source pointer
  * Return: dest
  */
 char *_strcat(char *dest, char *src)
@@ -17,5 +19,5 @@ char *_strcat(char *dest, char *src)
 	}
 	dest[i + j] = '\0';
 
-	return dest;
+	return (dest);
 }
