@@ -23,6 +23,6 @@ char *cap_string(char *str)
 		}
 		}
 	}
-	j++;
+	i++;
 	return (str);
 }
