@@ -26,11 +26,11 @@ char *cap_string(char *str)
 			{
 				i++;
 			}
+		}
 			else
 			{
 				i++;
 			}
 		}
-	}
 	return (str);
 }
