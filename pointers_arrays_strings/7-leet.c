@@ -7,7 +7,9 @@
  */
 char *leet(char *str)
 {
-	for (int i = 0; str[i]; i++)
+	int i = 0;
+
+	for (i = 0; str[i]; i++)
 	{
 		if (str[i] == 'o' || str[i] == 'O')
 		{
