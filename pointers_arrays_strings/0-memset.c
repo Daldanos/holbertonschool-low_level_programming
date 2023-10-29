@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * memset - main function
  * @s: pointer variable
