@@ -1,7 +1,7 @@
 /**
  * _sqrt_recursion - function
  * @n: int
- * Return: 1 or -1
+ * Return: result
  */
 int _sqrt_recursion(int n)
 {
@@ -15,17 +15,24 @@ int _sqrt_recursion(int n)
 	}
 	else
 	{
-		int i;
+		int mid = n / 2;
+		int low = 0;
+		int high = n;
 
-		for (i = 1; i <= n / 2; i++)
+		while (low <= high)
 		{
-			if (i * i == n)
+			mid = (low + high) / 2;
+			if (mid * mid == n)
 			{
-				return (i);
+				return (mid);
 			}
-			else if (i * i > n)
+			else if (mid * mid < n)
 			{
-				return (i - 1);
+				low = mid + 1;
+			}
+			else
+			{
+				high = mid - 1;
 			}
 		}
 		return (-1);
