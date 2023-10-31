@@ -17,25 +17,14 @@ int _sqrt_recursion(int n)
 	else
 	{
 		int mid = n / 2;
-		int low = 0;
-		int high = n;
 
-		while (low <= high)
+		if (mid * mid == n)
 		{
-			mid = (low + high) / 2;
-			if (mid * mid == n)
-			{
-				return (mid);
-			}
-			else if (mid * mid < n)
-			{
-				low = mid + 1;
-			}
-			else
-			{
-				high = mid;
-			}
+			return (mid);
 		}
-		return (-1);
+		else
+		{
+			return (_sqrt_recursion(n / 2) + 1);
+		}
 	}
 }
