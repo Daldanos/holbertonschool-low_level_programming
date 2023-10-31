@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _sqrt_recursion - function
  * @n: int
@@ -32,7 +33,7 @@ int _sqrt_recursion(int n)
 			}
 			else
 			{
-				high = mid - 1;
+				high = mid;
 			}
 		}
 		return (-1);
