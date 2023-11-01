@@ -16,15 +16,27 @@ int _sqrt_recursion(int n)
 	}
 	else
 	{
-		int mid = n / 2;
-
-		if (mid * mid == n)
-		{
-			return (mid);
-		}
-		else
-		{
-			return (_sqrt_recursion(n / 2) + 1);
-		}
+		return (_sqrt_recursion_helper(n, 1));
+	}
+}
+/**
+ * _sqrt_recursion_helper - helper function
+ * @n: int
+ * @i: int
+ * Return: sqrt
+ */
+int _sqrt_recursion_helper(int n, int i)
+{
+	if (i * i > n)
+	{
+		return (-1);
+	}
+	else if (i * i == n)
+	{
+		return (i);
+	}
+	else
+	{
+		return (_sqrt_recursion_helper(n, i + 1));
 	}
 }
