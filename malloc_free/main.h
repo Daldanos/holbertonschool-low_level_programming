@@ -1,3 +1,5 @@
+#ifndef MAIN_H
+#define MAIN_H
 void reset_to_98(int *n);
 void swap_int(int *a, int *b);
 int _strlen(char *s);
@@ -61,4 +63,4 @@ char *_strdup(char *str);
 char *str_concat(char *s1, char *s2);
 int **alloc_grid(int width, int height);
 void free_grid(int **grid, int height);
-
+#endif
