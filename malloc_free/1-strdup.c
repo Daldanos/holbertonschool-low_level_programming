@@ -8,11 +8,11 @@
  */
 char *_strdup(const char *str)
 {
-	if (str == NULL)
-		return (NULL);
-	
 	unsigned int len = 0;
 	char *dup;
+
+	if (str == NULL)
+		return (NULL);
 	
 	while (str[len] != '\0')
 		len++;
@@ -25,7 +25,7 @@ char *_strdup(const char *str)
 	for (unsigned int i = 0; i < len; i++)
 		dup[i] = str[i];
 	
-	duplicate[len] = '\0';
+	dup[len] = '\0';
 	
 	return (dup);
 }
