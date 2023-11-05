@@ -6,7 +6,7 @@
  * @str: The string to duplicate
  * Return: Pointer to duplicate string
  */
-char *_strdup(const char *str)
+char *_strdup(char *str)
 {
 	unsigned int len = 0;
 	unsigned int i;
