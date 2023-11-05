@@ -1,5 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
+char *_strdup(char *str);
 void reset_to_98(int *n);
 void swap_int(int *a, int *b);
 int _strlen(char *s);
@@ -59,7 +60,6 @@ int is_prime_number(int n);
 int _sqrt_recursion_helper(int n, int i);
 int is_divisible(int n, int div);
 char *create_array(unsigned int size, char c);
-char *_strdup(char *str);
 char *str_concat(char *s1, char *s2);
 int **alloc_grid(int width, int height);
 void free_grid(int **grid, int height);
