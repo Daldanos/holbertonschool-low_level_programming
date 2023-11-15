@@ -7,13 +7,8 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
-	if (name != NULL && f != NULL)
-	{
-		while (*name != '\0')
-		{
-			f(name);
-			name++;
-		}
-		_putchar('\n');
-	}
+	if (f != NULL)
+
+		f(name);
+
 }
