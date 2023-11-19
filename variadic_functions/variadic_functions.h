@@ -2,6 +2,11 @@
 #define VARIADIC_FUNCTIONS_H
 #include <stddef.h>
 #include <stdarg.h>
+/**
+ * struct print_data - prints data
+ * @format: array
+ * @print_func: va list
+ */
 typedef struct print_data
 {
 	char *format;
