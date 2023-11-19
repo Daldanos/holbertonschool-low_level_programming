@@ -3,11 +3,9 @@
 #include <string.h>
 
 /**
- *
- *
- *
- *
- *
+ * get_op_func - main function
+ * @s: array
+ * Return: 0
  */
 
 int (*get_op_func(char *s))(int, int)
