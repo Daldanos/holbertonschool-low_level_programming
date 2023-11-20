@@ -9,34 +9,40 @@
 void print_all(const char * const format, ...)
 {
 	va_list args;
-	int i = 0;
-	int j;
-	char *separator = "";
-	print_data_t print_types[] = {
-		{"c", print_c},
-		{"i", print_i},
-		{"f", print_f},
-		{"s", print_s},
-		{NULL, NULL}
-	};
+	unsigned int i = 0;
+	char *s, *t = "(nil)";
+
 
 	va_start(args, format);
 
-	while (format && format[i])
+	while (format != NULL && format[i] != '\0')
 	{
-		j = 0;
-
-		while (print_types[j].format)
+		switch (format[i])
 		{
-			if (*(print_types[j].format) == format[i])
-			{
-				printf("%s", separator);
-				print_types[j].print_func(args);
-				separator = ", ";
+			case 'c':
+				printf("%c", va_arg(args, int));
 				break;
-			}
-			j++;
+			case 'i':
+				printf("%d", va_arg(args, int));
+				break;
+			case 'f':
+				printf("%f", va_arg(args, double));
+				break;
+			case 's':
+				s = va_arg(args, char *);
+				if (s != NULL)
+					t = s;
+				printf("%s", t);
+				break;
+			default:
+				i++;
+				continue;
 		}
+		if ((format[i] == 'c' || format[i] == 'i' || format[i] == 'f' ||
+				format[i] == 's') && format[i + 1] != '\0')
+			printf(", ");
+
+
 		i++;
 	}
 	va_end(args);
