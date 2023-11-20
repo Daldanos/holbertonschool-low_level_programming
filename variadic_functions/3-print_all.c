@@ -13,10 +13,10 @@ void print_all(const char * const format, ...)
 	int j;
 	char *separator = "";
 	print_data_t print_types[] = {
-		{"c", print_char},
-		{"i", print_int},
-		{"f", print_float},
-		{"s", print_string},
+		{"c", print_c},
+		{"i", print_i},
+		{"f", print_f},
+		{"s", print_s},
 		{NULL, NULL}
 	};
 
