@@ -10,7 +10,7 @@ size_t print_list(const list_t *h)
 {
 	int count = 0;
 
-	while (*h != NULL)
+	while (h)
 	{
 		if (h->str == NULL)
 		{
@@ -20,7 +20,7 @@ size_t print_list(const list_t *h)
 		{
 			printf("%s", h->str);
 		}
-		if (h->next == NULL)
+		if (h->next)
 		{
 			printf(" ");
 		}
