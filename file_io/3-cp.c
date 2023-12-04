@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 		exit(98); }
 	if (destFile == NULL)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write to file %s\n", argv[2]);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		fclose(sourceFile);
 		exit(99); }
 	while ((bytesRead = fread(buf, 1, BUF_SIZE, sourceFile)) > 0)
